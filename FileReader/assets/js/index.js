@@ -35,7 +35,15 @@ upload.nextElementSibling.onchange=function(e){
              container.appendChild(creadiv)
 
              div.onclick=function(){
-                 creadiv.style.display="none"
+
+                if (confirm("silmek isdiyirsiniz?")){
+
+                    creadiv.style.display="none"
+                }
+                else{
+                    creadiv.style.display="block"
+                }
+                 
              }
 
          
@@ -77,8 +85,17 @@ container.ondrop=function(e){
              container.appendChild(creadiv)
 
              div.onclick=function(){
-                 creadiv.style.display="none"
+                 
+                if (confirm("silmek isdiyirsiniz?")){
+
+                    creadiv.style.display="none"
+                }
+                else{
+                    creadiv.style.display="block"
+                }
+                 
              }
+
 
          
 
